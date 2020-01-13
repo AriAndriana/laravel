@@ -137,3 +137,17 @@ Route::get('tambah-data-gaji', function(){
     $gaji->save();
     return $gaji;
 });
+
+Route::get('hallo', 'SiswaController@hallo');
+Route::get('nama', 'SiswaController@nama');
+Route::get('sekolah', 'SiswaController@sekolah');
+Route::get('kelas', 'SiswaController@kelas');
+Route::get('teman', 'SiswaController@teman');
+Route::get('smp', 'SiswaController@smp');
+Route::get('alamat', 'SiswaController@alamat');
+Route::get('device', 'SiswaController@laptop');
+Route::get('ttl', 'SiswaController@ttl');
+Route::get('umur', 'SiswaController@umur');
+Route::get('warnakucing/{warna?}', 'SiswaController@warnakucing');
+
+Route::get('beli/{makan?}/{harga?}', 'SiswaController@jual');
